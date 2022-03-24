@@ -1,4 +1,4 @@
-import platform from '/assets/platform.png'
+// import platform from '/assets/platform.png'
 
 const canvas = document.querySelector('canvas');
 const c = canvas.getContext('2d');
