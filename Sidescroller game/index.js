@@ -1,4 +1,6 @@
-// import platform from '/assets/platform.png'
+import platform from './assets/platform.png'
+
+console.log(platform);
 
 const canvas = document.querySelector('canvas');
 const c = canvas.getContext('2d');
@@ -60,7 +62,7 @@ class Platform{
 
 
 const player = new Player;
-const platforms = [new Platform({x:100, y: 300}), new Platform({x:600, y: 400})]
+const platforms = [new Platform({x:100, y: 300}), new Platform({x:600, y: 400}), new Platform({x:1000, y: 450})]
 
 const keys = {
     right:{
@@ -113,6 +115,7 @@ platforms.forEach((platform) => {
     }
 });
 
+//win scenario
 if (scrollOffset > 2000){
     console.log('you win');
 }
